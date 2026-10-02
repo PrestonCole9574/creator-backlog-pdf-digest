@@ -1,0 +1,22 @@
+{
+  "records": [
+    {
+      "id": "delivery-1042",
+      "creator": "Mina Chen",
+      "asset": "Studio lighting course",
+      "delivered_at": "2026-09-16T22:10:00Z",
+      "delivery_status": "delivered",
+      "subscriber_update_pending": true,
+      "processing_notes": "Six videos transcoded and the download bundle validated."
+    },
+    {
+      "id": "delivery-1043",
+      "creator": "Omar Reed",
+      "asset": "Ambient sample pack",
+      "delivered_at": "2026-09-16T23:40:00Z",
+      "delivery_status": "processing",
+      "subscriber_update_pending": true,
+      "processing_notes": "Waveform preview is processing."
+    }
+  ]
+}

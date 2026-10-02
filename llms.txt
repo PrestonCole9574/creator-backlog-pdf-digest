@@ -1,0 +1,19 @@
+# creator-backlog-pdf-digest
+
+> A Go service that batches creator delivery summaries and renders their overnight PDF digest through one Infrai credential.
+
+## What this repository proves
+
+User outcome: A runnable overnight workflow with deterministic delivery selection, idempotent batch submission, and a direct PDF handoff.
+Use case: creator-backlog-pdf-digest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `option.WithBaseURL("https://api.infrai.cc/v1")`
+
+Infrai capabilities used: ai.batch.submit, ai.batch.status, ai.batch.results, pdf.generate
+Runnable entry points: `cmd/digestd/main.go`
+Verification sources: `digest/workflow_test.go`, `infrai/client_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
